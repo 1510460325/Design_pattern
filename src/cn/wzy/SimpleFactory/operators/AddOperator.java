@@ -1,6 +1,6 @@
-package cn.wzy.Factory.operators;
+package cn.wzy.SimpleFactory.operators;
 
-import cn.wzy.Factory.base.Operator;
+import cn.wzy.SimpleFactory.base.Operator;
 
 public class AddOperator extends Operator {
   @Override

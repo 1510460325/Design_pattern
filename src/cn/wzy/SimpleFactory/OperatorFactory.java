@@ -1,9 +1,9 @@
-package cn.wzy.Factory;
+package cn.wzy.SimpleFactory;
 
-import cn.wzy.Factory.base.Operator;
-import cn.wzy.Factory.operators.AddOperator;
-import cn.wzy.Factory.operators.BaseOperator;
-import cn.wzy.Factory.operators.SubOperator;
+import cn.wzy.SimpleFactory.base.Operator;
+import cn.wzy.SimpleFactory.operators.AddOperator;
+import cn.wzy.SimpleFactory.operators.BaseOperator;
+import cn.wzy.SimpleFactory.operators.SubOperator;
 
 public class OperatorFactory {
 
