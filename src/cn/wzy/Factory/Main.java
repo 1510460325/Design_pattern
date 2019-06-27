@@ -12,7 +12,7 @@ public class Main {
     System.out.println(instance.execute(15));
 
     OPeratorFactory factory1 = new SubFactory();
-    Operator instance1 = factory.getInstance();
+    Operator instance1 = factory1.getInstance();
     System.out.println(instance1.execute(15));
   }
 }

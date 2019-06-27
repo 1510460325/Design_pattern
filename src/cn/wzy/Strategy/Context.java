@@ -1,26 +1,27 @@
 package cn.wzy.Strategy;
 
-import cn.wzy.Strategy.base.BaseStrategy;
-import cn.wzy.Strategy.strates.StrategyOne;
-import cn.wzy.Strategy.strates.StrategyTwo;
+import cn.wzy.Strategy.base.Weapon;
+import cn.wzy.Strategy.strates.HandsGun;
+import cn.wzy.Strategy.strates.Knife;
+import cn.wzy.Strategy.strates.SmallGun;
 
 public class Context {
-  private BaseStrategy strategy;
+  private Weapon strategy;
 
   public Context(String name) {
     switch (name) {
       case "one":
-        strategy = new StrategyOne();
+        strategy = new HandsGun();
         break;
       case "two":
-        strategy = new StrategyTwo();
+        strategy = new Knife();
         break;
       default:
-        strategy = new StrategyOne();
+        strategy = new SmallGun();
     }
   }
 
-  public double calculation(double before) {
-    return strategy.execute(before);
+  public void fight() {
+    strategy.shoot();
   }
 }
